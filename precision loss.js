@@ -14,3 +14,28 @@
 
 console.log((6.35*10).toFixed(20)); // 63.50000000000000000000
 console.log(Math.round(6.35 * 10)/10); // 6.35 -> 63.5 -> 64(rounded) -> 6.4
+
+
+// Conclusion: evade equality checks when working with decimal fractions.
+// Below code results into infinite loop
+
+/*
+
+let i = 0;
+while (i != 10) {
+  i += 0.2;
+}
+
+*/
+
+//To check the value of i around the time it is supposed to be 10, round
+
+/*
+
+let i = 0;
+while (i < 11) {
+  i += 0.2;
+  if (i > 9.8 && i < 10.2) alert( i );
+}
+
+*/
